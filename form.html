@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doido probando</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<style>
+    .doido{
+        border: #1f1bff52 2px solid;
+        border-radius: 10px;
+        
+    }
+    label{
+        font-weight: bold;
+    }
+    h3{
+        color: rgba(64, 24, 240, 0.522);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Doido</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="https:\\facebook.com">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https:\\facebook.com">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https:\\facebook.com">Pricing</a>
+            </li>
+          </ul>
+          <span class="navbar-text">
+            Iniciar seccion
+          </span>
+        </div>
+      </nav><br>
+
+    <div class="doido container col-md-6">
+        <h3 class="text-center">
+            Registrarse
+        </h3><hr>
+        <form class="needs-validation" novalidate>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                <label for="validationCustom01">First name</label>
+                <input type="text" class="form-control" id="validationCustom01" required>
+                <div class="valid-feedback">
+                    Muy caballo
+                </div>
+                <div class="invalid-feedback">
+                    Muy mal caballo
+                </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                <label for="validationCustom02">Last name</label>
+                <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+                <div class="valid-feedback">
+                    Muy caballo
+                </div>
+                <div class="invalid-feedback">
+                    Muy mal caballo
+                </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                <label for="validationCustom03">City</label>
+                <input type="text" class="form-control" id="validationCustom03" required>
+                <div class="valid-feedback">
+                    Muy caballo
+                </div>
+                <div class="invalid-feedback">
+                    Muy mal caballo
+                </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                <label for="validationCustom04">State</label>
+                <select class="custom-select" id="validationCustom04" required>
+                    <option selected disabled value="">Choose...</option>
+                    <option>...</option>
+                </select>
+                <div class="valid-feedback">
+                    Muy caballo
+                </div>
+                <div class="invalid-feedback">
+                    Muy mal caballo
+                </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                <label for="validationCustom05">Zip</label>
+                <input type="text" class="form-control" id="validationCustom05" required>
+                <div class="valid-feedback">
+                    Muy caballo
+                </div>
+                <div class="invalid-feedback">
+                    Muy mal caballo
+                </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                    Agree to terms and conditions
+                </label>
+                <div class="valid-feedback">
+                    Muy caballo
+                </div>
+                <div class="invalid-feedback">
+                    Muy mal caballo
+                </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <button class="btn btn-outline-info" type="submit">Submit form</button>
+            </div>
+        </form><br>
+    </div>
+
+    <script>
+        (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+            }, false);
+            });
+        }, false);
+        })();
+    </script>
+</body>
+</html>
